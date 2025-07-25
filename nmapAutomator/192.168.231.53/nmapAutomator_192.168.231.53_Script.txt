@@ -1,0 +1,80 @@
+
+[0;33mRunning a Script scan on [0m192.168.231.53
+[0m
+[0;32mHost is likely running Unknown OS!
+
+
+[0;32m---------------------Starting Script Scan-----------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: Service Scan (0:00:07 elapsed - 0:00:02 remaining)   
+[#######################################################################>                             ] 71% done   
+[2AIn progress: Service Scan (0:00:09 elapsed - 0:00:02 remaining)   
+[#####################################################################################>               ] 85% done   
+[2AIn progress: Service Scan (0:00:11 elapsed - 0:00:02 remaining)   
+[#####################################################################################>               ] 85% done   
+[2AIn progress: Service Scan (0:00:13 elapsed - 0:00:02 remaining)   
+[#####################################################################################>               ] 85% done   
+[2AIn progress: Service Scan (0:00:15 elapsed - 0:00:02 remaining)   
+[#####################################################################################>               ] 85% done   
+[2AIn progress: Script Scan (0:00:17 elapsed - 0:00:00 remaining)   
+[############################################################################################>        ] 92% done   
+[2AIn progress: Script Scan (0:00:19 elapsed - 0:00:00 remaining)   
+[#################################################################################################>   ] 97% done   
+[2AIn progress: Script Scan (0:00:21 elapsed - 0:00:00 remaining)   
+[##################################################################################################>  ] 98% done   
+[2AIn progress: Script Scan (0:00:23 elapsed - 0:00:00 remaining)   
+[##################################################################################################>  ] 98% done   
+[2AIn progress: Script Scan (0:00:25 elapsed - 0:00:00 remaining)   
+[##################################################################################################>  ] 98% done   
+[2AIn progress: Script Scan (0:00:27 elapsed - 0:00:00 remaining)   
+[#########################################################################################>           ] 89% done   
+[2A[0K
+[0K
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           FileZilla ftpd 0.9.41 beta
+| ftp-syst: 
+|_  SYST: UNIX emulated by FileZilla
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql         MariaDB 10.3.24 or later (unauthorized)
+4443/tcp open  http          Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)
+| http-title: Welcome to XAMPP
+|_Requested resource was http://192.168.231.53:4443/dashboard/
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6
+8080/tcp open  http          Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)
+| http-title: Welcome to XAMPP
+|_Requested resource was http://192.168.231.53:8080/dashboard/
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: 3s
+| smb2-time: 
+|   date: 2025-07-22T07:34:02
+|_  start_date: N/A
+
+[0m
+[0m
+[0;32mOS Detection modified to: Windows
+[0m
+
+
+
+[0;32m---------------------Finished all scans------------------------
+[0m
+
+[0;33mCompleted in 30 seconds
+[0m

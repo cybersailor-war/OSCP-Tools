@@ -1,0 +1,38 @@
+[2K                        [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 210ms][0m
+[2K.htpasswd               [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 211ms][0m
+[2K.htaccess               [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 212ms][0m
+[2K.htaccess.php           [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 212ms][0m
+[2K.htpasswd.php           [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 212ms][0m
+[2K.hta                    [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 277ms][0m
+[2K.hta.php                [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 281ms][0m
+[2Kaux.php                 [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 151ms][0m
+[2Kaux                     [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 151ms][0m
+[2Kcgi-bin/                [Status: 403, Size: 1060, Words: 103, Lines: 43, Duration: 245ms][0m
+[2Kcom1.php                [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 158ms][0m
+[2Kcom1                    [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 158ms][0m
+[2Kcom2                    [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 161ms][0m
+[2Kcom3                    [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 157ms][0m
+[2Kcom3.php                [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 151ms][0m
+[2Kcom2.php                [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 165ms][0m
+[2Kcon                     [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 155ms][0m
+[2Kcon.php                 [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 160ms][0m
+[2Kdashboard               [Status: 301, Size: 351, Words: 22, Lines: 10, Duration: 152ms][0m
+[2Kfavicon.ico             [Status: 200, Size: 30894, Words: 412, Lines: 6, Duration: 148ms][0m
+[2Kimg                     [Status: 301, Size: 345, Words: 22, Lines: 10, Duration: 155ms][0m
+[2Kindex.php               [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 151ms][0m
+[2KIndex.php               [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 151ms][0m
+[2Kindex.php               [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 161ms][0m
+[2Klicenses                [Status: 403, Size: 1205, Words: 127, Lines: 46, Duration: 163ms][0m
+[2Klpt1.php                [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 152ms][0m
+[2Klpt1                    [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 162ms][0m
+[2Klpt2                    [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 151ms][0m
+[2Klpt2.php                [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 155ms][0m
+[2Knul                     [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 152ms][0m
+[2Knul.php                 [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 155ms][0m
+[2Kphpmyadmin              [Status: 403, Size: 1205, Words: 127, Lines: 46, Duration: 167ms][0m
+[2Kprn.php                 [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 154ms][0m
+[2Kprn                     [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 159ms][0m
+[2Kserver-status           [Status: 403, Size: 1205, Words: 127, Lines: 46, Duration: 152ms][0m
+[2Kserver-info             [Status: 403, Size: 1205, Words: 127, Lines: 46, Duration: 177ms][0m
+[2Ksite                    [Status: 301, Size: 346, Words: 22, Lines: 10, Duration: 154ms][0m
+[2Kwebalizer               [Status: 403, Size: 1046, Words: 102, Lines: 43, Duration: 152ms][0m

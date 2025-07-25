@@ -1,0 +1,23 @@
+# Nmap 7.95 scan initiated Sun Jul 20 17:01:20 2025 as: /usr/lib/nmap/nmap --privileged -sCV -p135,139,445,3128 --open -oN nmap/Script_192.168.136.189.nmap --system-dns --stats-every 2s 192.168.136.189
+Nmap scan report for 192.168.136.189
+Host is up (0.15s latency).
+
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3128/tcp open  http-proxy    Squid http proxy 4.14
+|_http-title: ERROR: The requested URL could not be retrieved
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 2s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-07-20T21:01:43
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 20 17:02:18 2025 -- 1 IP address (1 host up) scanned in 57.52 seconds

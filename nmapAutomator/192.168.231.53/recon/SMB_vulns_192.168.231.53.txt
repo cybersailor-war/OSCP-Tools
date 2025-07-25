@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Tue Jul 22 06:17:39 2025 as: /usr/lib/nmap/nmap --privileged -Pn -p445 --script vuln -oN recon/SMB_vulns_192.168.231.53.txt 192.168.231.53
+Nmap scan report for 192.168.231.53
+Host is up (0.16s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+
+# Nmap done at Tue Jul 22 06:18:03 2025 -- 1 IP address (1 host up) scanned in 24.59 seconds

@@ -1,0 +1,51 @@
+WARNING: Duplicate port number(s) specified.  Are you alert enough to be using Nmap?  Have some coffee or Jolt(tm).
+# Nmap 7.95 scan initiated Sun Jul 20 17:12:01 2025 as: /usr/lib/nmap/nmap --privileged -sV --script vuln -p135,139,445,3128,135,139,445,3128,49666,49667 --open -oN nmap/Vulns_192.168.136.189.nmap --system-dns --stats-every 3s 192.168.136.189
+Nmap scan report for 192.168.136.189
+Host is up (0.15s latency).
+
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+3128/tcp  open  http-proxy    Squid http proxy 4.14
+| vulners: 
+|   cpe:/a:squid-cache:squid:4.14: 
+|     	CVE-2023-46846	9.3	https://vulners.com/cve/CVE-2023-46846
+|     	CVE-2024-25111	8.6	https://vulners.com/cve/CVE-2024-25111
+|     	CVE-2023-50269	8.6	https://vulners.com/cve/CVE-2023-50269
+|     	CVE-2023-49288	8.6	https://vulners.com/cve/CVE-2023-49288
+|     	CVE-2023-49286	8.6	https://vulners.com/cve/CVE-2023-49286
+|     	CVE-2023-49285	8.6	https://vulners.com/cve/CVE-2023-49285
+|     	CVE-2023-46847	8.6	https://vulners.com/cve/CVE-2023-46847
+|     	CVE-2023-46724	8.6	https://vulners.com/cve/CVE-2023-46724
+|     	CVE-2022-41318	8.6	https://vulners.com/cve/CVE-2022-41318
+|     	CVE-2024-45802	7.5	https://vulners.com/cve/CVE-2024-45802
+|     	CVE-2024-25617	7.5	https://vulners.com/cve/CVE-2024-25617
+|     	CVE-2023-5824	7.5	https://vulners.com/cve/CVE-2023-5824
+|     	CVE-2023-46728	7.5	https://vulners.com/cve/CVE-2023-46728
+|     	CVE-2021-28651	7.5	https://vulners.com/cve/CVE-2021-28651
+|     	PACKETSTORM:180526	6.5	https://vulners.com/packetstorm/PACKETSTORM:180526	*EXPLOIT*
+|     	MSF:AUXILIARY-DOS-HTTP-SQUID_RANGE_DOS-	6.5	https://vulners.com/metasploit/MSF:AUXILIARY-DOS-HTTP-SQUID_RANGE_DOS-	*EXPLOIT*
+|     	CVE-2024-23638	6.5	https://vulners.com/cve/CVE-2024-23638
+|     	CVE-2022-41317	6.5	https://vulners.com/cve/CVE-2022-41317
+|     	CVE-2021-46784	6.5	https://vulners.com/cve/CVE-2021-46784
+|     	CVE-2021-33620	6.5	https://vulners.com/cve/CVE-2021-33620
+|     	CVE-2021-31808	6.5	https://vulners.com/cve/CVE-2021-31808
+|     	CVE-2021-31807	6.5	https://vulners.com/cve/CVE-2021-31807
+|     	CVE-2021-31806	6.5	https://vulners.com/cve/CVE-2021-31806
+|     	CVE-2021-28662	6.5	https://vulners.com/cve/CVE-2021-28662
+|     	CVE-2024-37894	6.3	https://vulners.com/cve/CVE-2024-37894
+|     	CVE-2021-28116	5.3	https://vulners.com/cve/CVE-2021-28116
+|_    	CVE-2021-28652	4.9	https://vulners.com/cve/CVE-2021-28652
+|_http-server-header: squid/4.14
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 20 17:26:20 2025 -- 1 IP address (1 host up) scanned in 858.68 seconds

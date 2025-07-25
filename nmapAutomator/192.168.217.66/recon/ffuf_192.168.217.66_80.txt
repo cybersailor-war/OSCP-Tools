@@ -1,0 +1,12 @@
+[2K                        [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 153ms][0m
+[2Khelp                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 166ms][0m
+[2KHelp                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 149ms][0m
+[2Khtml                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 163ms][0m
+[2KHTML                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 150ms][0m
+[2KImages                  [Status: 301, Size: 155, Words: 9, Lines: 2, Duration: 148ms][0m
+[2Kimages                  [Status: 301, Size: 155, Words: 9, Lines: 2, Duration: 150ms][0m
+[2Kindex.html              [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 164ms][0m
+[2KIndex.html              [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 149ms][0m
+[2Kindex.html              [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 149ms][0m
+[2Kjavadoc                 [Status: 301, Size: 156, Words: 9, Lines: 2, Duration: 165ms][0m
+[2Ktext                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 151ms][0m
