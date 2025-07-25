@@ -1,0 +1,28 @@
+# Nmap 7.95 scan initiated Wed Jul 23 04:55:39 2025 as: /usr/lib/nmap/nmap --privileged -sCV -p80,135,139,445,8082 --open -oN nmap/Script_192.168.217.66.nmap --system-dns --stats-every 2s 192.168.217.66
+Nmap scan report for 192.168.217.66
+Host is up (0.15s latency).
+
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: H2 Database Engine (redirect)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+8082/tcp open  http          H2 database http console
+|_http-title: H2 Console
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-07-23T08:56:00
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: 3s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul 23 04:56:04 2025 -- 1 IP address (1 host up) scanned in 25.16 seconds

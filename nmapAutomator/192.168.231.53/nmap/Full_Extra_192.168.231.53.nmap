@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Jul 22 04:25:22 2025 as: /usr/lib/nmap/nmap --privileged -sCV -p5040,49664,49665,49666,49667,49668,49669 --open -oN nmap/Full_Extra_192.168.231.53.nmap --system-dns --stats-every 2s 192.168.231.53
+Nmap scan report for 192.168.231.53
+Host is up (0.17s latency).
+
+PORT      STATE SERVICE VERSION
+5040/tcp  open  unknown
+49664/tcp open  msrpc   Microsoft Windows RPC
+49665/tcp open  msrpc   Microsoft Windows RPC
+49666/tcp open  msrpc   Microsoft Windows RPC
+49667/tcp open  msrpc   Microsoft Windows RPC
+49668/tcp open  msrpc   Microsoft Windows RPC
+49669/tcp open  msrpc   Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 22 04:28:19 2025 -- 1 IP address (1 host up) scanned in 176.83 seconds

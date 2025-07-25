@@ -1,0 +1,12 @@
+# Nmap 7.95 scan initiated Sun Jul 20 17:00:15 2025 as: /usr/lib/nmap/nmap --privileged -T4 --max-retries 1 --max-scan-delay 20 --open -oN nmap/Port_192.168.136.189.nmap --system-dns --stats-every 1s 192.168.136.189
+Nmap scan report for 192.168.136.189
+Host is up (0.15s latency).
+Not shown: 996 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+
+# Nmap done at Sun Jul 20 17:00:25 2025 -- 1 IP address (1 host up) scanned in 9.81 seconds

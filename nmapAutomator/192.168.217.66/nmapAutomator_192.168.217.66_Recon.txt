@@ -1,0 +1,108 @@
+
+[0;33mRunning a Recon scan on [0m192.168.217.66
+[0m
+[0;32mHost is likely running Unknown OS!
+
+
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://192.168.217.66:80" | tee "recon/nikto_192.168.217.66_80.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '.html' -u "http://192.168.217.66:80/FUZZ" | tee "recon/ffuf_192.168.217.66_80.txt"
+
+nikto -host "http://192.168.217.66:8082" | tee "recon/nikto_192.168.217.66_8082.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '.html,.jsp' -u "http://192.168.217.66:8082/FUZZ" | tee "recon/ffuf_192.168.217.66_8082.txt"
+
+[0m
+[0;33mSMB Recon:
+[0m
+smbmap -H "192.168.217.66" | tee "recon/smbmap_192.168.217.66.txt"
+smbclient -L "//192.168.217.66/" -U "guest"% | tee "recon/smbclient_192.168.217.66.txt"
+
+
+
+
+[0;33m
+Which commands would you like to run?[0m
+All (Default), ffuf, nikto, smbclient, smbmap, Skip <!>
+
+[2KRunning Default in (30)s: [2KRunning Default in (29)s: [2KRunning Default in (28)s: [2KRunning Default in (27)s: [2KRunning Default in (26)s: [2KRunning Default in (25)s: [2KRunning Default in (24)s: [2KRunning Default in (23)s: [2KRunning Default in (22)s: [2KRunning Default in (21)s: [2KRunning Default in (20)s: [2KRunning Default in (19)s: [2KRunning Default in (18)s: [2KRunning Default in (17)s: [2KRunning Default in (16)s: [2KRunning Default in (15)s: [2KRunning Default in (14)s: [2KRunning Default in (13)s: [2KRunning Default in (12)s: [2KRunning Default in (11)s: [2KRunning Default in (10)s: [2KRunning Default in (9)s: [2KRunning Default in (8)s: [2KRunning Default in (7)s: [2KRunning Default in (6)s: [2KRunning Default in (5)s: [2KRunning Default in (4)s: [2KRunning Default in (3)s: [2KRunning Default in (2)s: [2KRunning Default in (1)s: 
+
+
+[0;32m---------------------Running Recon Commands--------------------
+[0m
+[0m
+[0;33mStarting nikto scan
+[0m
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          192.168.217.66
++ Target Hostname:    192.168.217.66
++ Target Port:        80
++ Start Time:         2025-07-23 05:06:39 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Microsoft-IIS/10.0
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ OPTIONS: Allowed HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST .
++ OPTIONS: Public HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST .
++ /javadoc/: Documentation...?.
++ 8102 requests: 0 error(s) and 5 item(s) reported on remote host
++ End Time:           2025-07-23 05:31:19 (GMT-4) (1480 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+[0m
+[0;33mFinished nikto scan
+[0m
+[0;33m=========================
+[0m
+[0;33mStarting ffuf scan
+[0m
+[2K                        [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 153ms][0m
+[2Khelp                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 166ms][0m
+[2KHelp                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 149ms][0m
+[2Khtml                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 163ms][0m
+[2KHTML                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 150ms][0m
+[2KImages                  [Status: 301, Size: 155, Words: 9, Lines: 2, Duration: 148ms][0m
+[2Kimages                  [Status: 301, Size: 155, Words: 9, Lines: 2, Duration: 150ms][0m
+[2Kindex.html              [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 164ms][0m
+[2KIndex.html              [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 149ms][0m
+[2Kindex.html              [Status: 200, Size: 1595, Words: 142, Lines: 45, Duration: 149ms][0m
+[2Kjavadoc                 [Status: 301, Size: 156, Words: 9, Lines: 2, Duration: 165ms][0m
+[2Ktext                    [Status: 301, Size: 153, Words: 9, Lines: 2, Duration: 151ms][0m
+[0m
+[0;33mFinished ffuf scan
+[0m
+[0;33m=========================
+[0m
+[0;33mStarting nikto scan
+[0m
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          192.168.217.66
++ Target Hostname:    192.168.217.66
++ Target Port:        8082
++ Start Time:         2025-07-23 05:31:56 (GMT-4)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Multiple index files found: /index.do, /index.html, /index.jsp.
++ /clusterframe.jsp: Macromedia JRun 4 build 61650 remote administration interface is vulnerable to several XSS attacks.
++ /IlohaMail/blank.html: IlohaMail 0.8.10 contains a XSS vulnerability. Previous versions contain other non-descript vulnerabilities.
++ /view_source.jsp: Resin 2.1.2 view_source.jsp allows any file on the system to be viewed by using \..\ directory traversal. This script may be vulnerable.
++ /webmail/blank.html: IlohaMail 0.8.10 contains an XSS vulnerability. Previous versions contain other non-descript vulnerabilities.
++ /IDSWebApp/IDSjsp/Login.jsp: Tivoli Directory Server Web Administration.
++ /servlet/org.apache.catalina.ContainerServlet/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes.
++ /servlet/org.apache.catalina.Context/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes.
++ /servlet/org.apache.catalina.Globals/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes.
++ /servlet/org.apache.catalina.servlets.WebdavStatus/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes.
++ /nosuchurl/><script>alert('Vulnerable')</script>: JEUS is vulnerable to Cross Site Scripting (XSS) when requesting non-existing JSP pages. See: https://seclists.org/fulldisclosure/2003/Jun/494
++ /~/<script>alert('Vulnerable')</script>.aspx?aspxerrorpath=null: Cross site scripting (XSS) is allowed with .aspx file requests. See: http://www.cert.org/advisories/CA-2000-02.html
++ /~/<script>alert('Vulnerable')</script>.aspx: Cross site scripting (XSS) is allowed with .aspx file requests. See: http://www.cert.org/advisories/CA-2000-02.html
++ /~/<script>alert('Vulnerable')</script>.asp: Cross site scripting (XSS) is allowed with .asp file requests. See: http://www.cert.org/advisories/CA-2000-02.html
++ /node/view/666\"><script>alert(document.domain)</script>: Drupal 4.2.0 RC is vulnerable to Cross Site Scripting (XSS).

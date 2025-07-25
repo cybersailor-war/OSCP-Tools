@@ -1,0 +1,24 @@
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://192.168.231.53:4443" | tee "recon/nikto_192.168.231.53_4443.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '.php' -u "http://192.168.231.53:4443/FUZZ" | tee "recon/ffuf_192.168.231.53_4443.txt"
+
+nikto -host "http://192.168.231.53:8080" | tee "recon/nikto_192.168.231.53_8080.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '.php' -u "http://192.168.231.53:8080/FUZZ" | tee "recon/ffuf_192.168.231.53_8080.txt"
+
+nikto -host "http://192.168.231.53:|_http-open-proxy: Proxy might be redirecting requests" | tee "recon/nikto_192.168.231.53_|_http-open-proxy: Proxy might be redirecting requests.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '' -u "http://192.168.231.53:|_http-open-proxy: Proxy might be redirecting requests/FUZZ" | tee "recon/ffuf_192.168.231.53_|_http-open-proxy: Proxy might be redirecting requests.txt"
+
+[0m
+[0;33mSMB Recon:
+[0m
+smbmap -H "192.168.231.53" | tee "recon/smbmap_192.168.231.53.txt"
+smbclient -L "//192.168.231.53/" -U "guest"% | tee "recon/smbclient_192.168.231.53.txt"
+nmap -Pn -p445 --script vuln -oN "recon/SMB_vulns_192.168.231.53.txt" "192.168.231.53"
+
+
+
+
