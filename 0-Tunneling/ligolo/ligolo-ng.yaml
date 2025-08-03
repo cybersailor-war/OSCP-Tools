@@ -2,7 +2,6 @@ agent:
     deadbeefcafe:
         autobind: false
         interface: ligolo
-interface: {}
 web:
     behindreverseproxy: false
     corsallowedorigin:

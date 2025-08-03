@@ -1,3 +1,71 @@
 session
 start
 session
+listener_add -addr 0.0.0.0:1337 --to 127.0.0.1:1337
+listener_add --addr 0.0.0.0:1337 --to 127.0.0.1:1337
+sessions
+exit
+sessions
+session
+listener_add --addr 0.0.0.0:1337 --to 127.0.0.1:1337
+session
+listener_stop
+session
+listener --addr 0.0.0.0:1337 --to 127.0.0.1:1337
+help
+listener_list
+listener_add --addr 0.0.0.0:1337 --to 127.0.0.1:1337
+listener_list
+session
+session_list
+listener_add --addr 0.0.0.0:1337 --to 127.0.0.1:1337
+session_list
+start
+session_list
+session
+session_list
+listener_add --addr 0.0.0.0:1337 --to 127.0.0.1:1337
+session_list
+exit
+session
+sessions
+tunnel_list
+listener_list
+listener_add --addr 0.0.0.0:1337 --to 127.0.0.1:1337
+listener_list
+session_list
+tunnel_list
+listener_list
+listener_stop
+listener_list
+listener_stop 0
+listener_stop 
+listener_list
+session_list
+listener_list
+listener_add --addr 0.0.0.0:1337 --to 0.0.0.0:1337
+session
+listener_add --addr 0.0.0.0:1337 --to 0.0.0.0:1337
+listener_list
+start
+listener_list 
+listener_add -addr 0.0.0.0:1234 --to 0.0.0.0:9999
+listener_add 0.0.0.0:1234 --to 0.0.0.0:9999
+exit
+listener_list
+session
+listener_list
+listener_add -addr 0.0.0.0:1234 --to 0.0.0.0:9999
+start
+listener_list
+session
+listener_add -addr 0.0.0.0:1234 --to 0.0.0.0:9999
+listener_add 0.0.0.0:1234 --to 0.0.0.0:9999
+listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:9999
+session
+start
+help
+tunnel_list
+listener_list
+session
+start
