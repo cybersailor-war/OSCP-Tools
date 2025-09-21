@@ -2,6 +2,10 @@ agent:
     deadbeefcafe:
         autobind: false
         interface: ligolo
+interface:
+    ligolo:
+        routes:
+            - 240.0.0.1/32
 web:
     behindreverseproxy: false
     corsallowedorigin:

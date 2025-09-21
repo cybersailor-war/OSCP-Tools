@@ -69,3 +69,205 @@ tunnel_list
 listener_list
 session
 start
+exit
+session
+start
+session
+sessions
+session
+start
+help
+tunnel_list
+session
+tunnel_list
+start
+help
+listener_list
+interface_list
+tunnel_list
+start
+tunnel_list
+route_list
+listener_list
+help
+start
+listener_add --addr 0.0.0.0:1235 --to 127.0.0.1:8000
+listener_list
+interface_create --name "ligolo"
+interface_list
+interface_add_route --name ligolo --route 10.10.151.0/24
+interface_list
+session
+sessions
+session
+start
+exit
+route_add --network 10.10.151.0/24
+interface_add_route --name ligolo --route 10.10.151.0/24
+help route
+help
+tunnel_start
+tunnel_start --tun ligolo
+exit
+interface_add_route --name ligolo --route 10.10.151.0/24
+route_list
+route_del --route 1
+route_del --name ligolo
+route_list
+route_del --name ligolo
+help
+route_list
+route_del --name ligolo
+route_list
+interface_del --name ligolo
+route_list
+interface_list 
+interface_del --name ligolo
+interface_list 
+exit
+interface_list
+interface_route_del --name ligolo
+interface_add_route --name ligolo --route 10.10.151.0/24
+interface_list
+sessions
+session
+start
+tunnel_start --tun ligolo
+interface_list
+session
+start
+interface_list
+route_list
+session
+interface_list
+start
+session
+start
+interface_list
+tunnel_list
+listener_list
+listener_add --addr 0.0.0.0:5555 --to 0.0.0.0:4444
+listener_list
+listener_add --addr 0.0.0.0:7777 --to 0.0.0.0:8888
+listener_list
+listener_add --addr 0.0.0.0:2222--to 127.0.0.1:3333
+listener_add --addr 0.0.0.0:2222 --to 127.0.0.1:3333
+listener_list
+start
+listener_list
+start
+session
+tunnel_list
+listener_list
+interface_add_route --name ligolo --route 10.10.151.0/24
+route_list
+session
+tunnel_list
+interface_list
+session
+start
+session
+start
+listener_add 0.0.0.0:5555 --to 0.0.0.0:4444
+listener_list
+listener_add 0.0.0.0:5555 --to 0.0.0.0:4444
+listener_add -addr 0.0.0.0:5555 --to 0.0.0.0:4444
+help
+listener_add -addr 0.0.0.0:5555 --to 0.0.0.0:4444 -tcp
+listener_add --addr 0.0.0.0:5555 --to 0.0.0.0:4444 -tcp
+listener_add --addr 0.0.0.0:5555 --to 0.0.0.0:4444 --tcp
+listener_list
+listener_add --addr 0.0.0.0:8888--to 0.0.0.0:7777--tcp
+listener_add --addr 0.0.0.0:8888 --to 0.0.0.0:7777 --tcp
+listener_list
+listener_add --addr 0.0.0.0:2222 --to 0.0.0.0:3333 --tcp
+listener_list
+route_list
+route_del --route 0
+route_del --name ligolo
+route_list
+listener_list
+listener_stop -h
+listener_stop
+exit
+listener_list
+exit
+interface_create --name "ligolo"
+interface_add_route --name ligolo --route  240.0.0.1/32
+session
+start
+session
+session_list
+exit
+session
+start
+interface_list
+interface_del --name ligolo
+interface_del --help 
+interface_route_del --name ligolo
+interface_list
+interface_del_route
+interface_delete -h
+interface_delete --name ligolo
+interface_list
+interface_create --name ligolo
+interface_list
+interface_add_route --name ligolo --route  240.0.0.1/32
+session
+start
+tunnel_list
+interface_create --name ligolo
+interface_add_route --name ligolo --route 10.10.74.0/24
+sessions
+session
+start
+tunnel_list
+interface_list
+session
+start
+session_list
+session_kill 2
+session_kill
+session_list
+session
+start
+interface_list
+interface_delete --name ligolo
+interface_list
+route_list
+interface_create --name ligolo
+interface_add_route --name ligolo --route 10.10.82.0/24
+sessions
+session
+start
+interface_list
+route_list
+interface_list
+session
+start
+session
+start
+interface_list
+session
+start
+ifconfig -h
+kill
+interface_delete --name ligolo
+interface_list
+interface_create --name ligolo
+interface_add_route --name ligolo --route 10.10.194.0/24
+start
+interface_list
+session
+tunnel_list
+tunnel_start --tun ligolo
+interface_list
+session
+start
+tunnel_list
+session
+start
+interface_create --name ligolo
+interface_add_route --name ligolo --route 240.0.0.1/32
+session
+start
