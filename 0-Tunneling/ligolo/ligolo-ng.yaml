@@ -5,7 +5,7 @@ agent:
 interface:
     ligolo:
         routes:
-            - 240.0.0.1/32
+            - 172.16.164.0/24
 web:
     behindreverseproxy: false
     corsallowedorigin:

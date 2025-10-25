@@ -271,3 +271,92 @@ interface_create --name ligolo
 interface_add_route --name ligolo --route 240.0.0.1/32
 session
 start
+interface_create --name "ligolo"
+interface_add_route --name ligolo --route 240.0.0.1/32
+session
+start
+tunnel_list
+exit
+interface_create --name "ligolo"
+interface_add_route --name ligolo --route 240.0.0.1/32
+interface_create --name "ligolo"
+interface_add_route --name ligolo --route 240.0.0.1/32
+start
+session
+start
+interface_create --name ligolo
+interface_add_route --name ligolo --route 240.0.0.1/32
+session
+start
+tunnel_list
+route_list
+listener_list
+tunnel_list
+interface_list
+route_list
+interface_list
+clear
+tunnel_list
+interface_list
+interface_create --name ligolo
+interface_list
+interface_add_route --name ligolo --route 172.16.104.0/24
+sessions
+session
+start
+tunnel_list
+interface_list
+sessions
+session
+start
+ping 172.16.152.6
+interface_del_route --route 172.16.104.0/24
+tunnel_list
+interface_add_route --name ligolo --route 172.16.152.0/24
+tunnel_list
+interface_list 
+interface_list
+tunnel_list
+tunnel_stop --agent 1
+tunnel_stop --agent 2
+tunnel_list
+tunnel_stop --agent RELIA\jim@WK01 - [Offline] - 0050568640ea
+session -h
+session --remove 1
+session --kill 1
+disconnect 1
+help
+session_kill -1
+session_kill -h 
+session_kill kill
+session_kill 1
+session_list
+session -h
+session_kill -h 
+session_kill
+interface_list
+route_del
+interface_list
+interface_add_route --name ligolo --route 172.16.129.0/24
+interface_list
+session
+start
+interface_list
+tunnel_list
+start
+session
+start
+session
+tunnel_list
+interface_list
+interface_delete
+interface_delete --name ligolo
+interface_delete
+interface_list
+interface_add_route --name ligolo --route 240.0.0.1/32
+interface_create --name ligolo
+interface_add_route --name ligolo --route 172.16.164.0/24
+session
+start
+tunnel_list
+tunnel_stop --agent 1
